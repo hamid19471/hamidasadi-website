@@ -9,4 +9,22 @@
         --border-color: #47aaf2;
         --text-color: #fff;
     }
+    body {
+        background-color: #16182c;
+        background-image: url("./assets/bg.webp");
+        background-position: center;
+        background-repeat: repeat;
+        background-size: 50vw 100vh;
+        color: #ffff;
+    }
+    .container {
+        @apply w-full max-w-[1340px] mx-auto;
+    }
+    .mobileMenu {
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+        backdrop-filter: blur(14px);
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
 }
