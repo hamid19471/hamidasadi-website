@@ -10,31 +10,39 @@ module.exports = withMT({
         "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-        color: {
-            "aj-bg": "var(--bg-color)",
-            "aj-text": "var(--text-color)",
-            "aj-primary": "var(--primary-color)",
-            "aj-border": "var(--border-color)",
-        },
         fontFamily: {
             sans: ["Oswald", "sans-serif"],
         },
         extend: {
+            textColor: {
+                skin: {
+                    bg: "var(--bg-color)",
+                    text: "var(--text-color)",
+                    primary: "var(--primary-color)",
+                    border: "var(--border-color)",
+                },
+            },
             borderRadius: {
-                "btn-radius": "0.6rem",
-                "box-radius": "0.6rem",
+                skin: {
+                    btn: "0.6rem",
+                    box: "0.6rem",
+                },
             },
             fontSize: {
-                "btn-text": "0.9rem",
-                "small-heading": "1.3rem",
-                "main-heading": "2rem",
-                paragraph: "1rem",
+                skin: {
+                    btn: "0.9rem",
+                    small: "1.3rem",
+                    main: "2rem",
+                    paragraph: "1rem",
+                },
             },
             fontWeight: {
-                "btn-text": "600",
-                "small-heading": "400",
-                "main-heading": "800",
-                paragraph: "400",
+                skin: {
+                    btnWeight: "600",
+                    smallWeight: "400",
+                    mainWeight: "800",
+                    paragraph: "400",
+                },
             },
         },
     },
