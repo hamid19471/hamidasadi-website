@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --bg-color: #2b2c6c;
+        --primary-color: #47aaf2;
+        --border-color: #47aaf2;
+        --text-color: #fff;
+    }
+}
