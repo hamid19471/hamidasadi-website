@@ -1,33 +1,11 @@
+import { menuItems } from "../../FakeAPI/MenuItem";
 import logo from "../../assets/logo.png";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import { UserIcon } from "@heroicons/react/24/solid";
 import { FolderIcon } from "@heroicons/react/24/solid";
-import { Bars3Icon } from "@heroicons/react/24/solid";
 import { PhoneIcon } from "@heroicons/react/24/solid";
 
 const Header = () => {
-    const menuItems = [
-        {
-            id: 1,
-            name: "Home",
-            link: "/",
-        },
-        {
-            id: 2,
-            name: "About",
-            link: "/about",
-        },
-        {
-            id: 3,
-            name: "Portfolio",
-            link: "/portfolio",
-        },
-        {
-            id: 4,
-            name: "Contact",
-            link: "/contact",
-        },
-    ];
     return (
         <header>
             <div className="hidden container h-[75px] md:flex items-center justify-between py-[10px]">
@@ -40,7 +18,12 @@ const Header = () => {
                             >
                                 {item.name}
                             </li>
-                            <span key={item.name}>|</span>
+                            <span
+                                key={item.name}
+                                className="items-center justify-center font-light last:hidden"
+                            >
+                                |
+                            </span>
                         </>
                     ))}
                 </ul>
@@ -49,21 +32,22 @@ const Header = () => {
                 </div>
             </div>
             <div className="fixed w-[400px] p-5 -translate-x-1/2 mobileMenu bottom-4 left-1/2 md:hidden">
-                <div className="relative flex items-center justify-between text-skin-primary">
-                    <div>
+                <div className="relative flex items-center justify-between text-skin-primary text-[12px]">
+                    <div className="flex flex-col items-center justify-center">
                         <HomeIcon className="w-7 h-7" />
+                        <p>Home</p>
                     </div>
-                    <div>
+                    <div className="flex flex-col items-center justify-center">
                         <UserIcon className="w-7 h-7" />
+                        <p>About</p>
                     </div>
-                    <div>
-                        <Bars3Icon className="absolute flex items-center justify-center w-12 h-12 p-1 -translate-x-1/2 bg-white rounded-full -top-9 left-1/2" />
-                    </div>
-                    <div>
+                    <div className="flex flex-col items-center justify-center">
                         <FolderIcon className="w-7 h-7" />
+                        <p>works</p>
                     </div>
-                    <div>
+                    <div className="flex flex-col items-center justify-center">
                         <PhoneIcon className="w-7 h-7" />
+                        <p>Contact</p>
                     </div>
                 </div>
             </div>
