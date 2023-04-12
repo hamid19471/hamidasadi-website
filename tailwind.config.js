@@ -16,7 +16,6 @@ module.exports = withMT({
         extend: {
             textColor: {
                 skin: {
-                    bg: "var(--bg-color)",
                     text: "var(--text-color)",
                     primary: "var(--primary-color)",
                     border: "var(--border-color)",
@@ -42,6 +41,11 @@ module.exports = withMT({
                     smallWeight: "400",
                     mainWeight: "800",
                     paragraph: "400",
+                },
+                backGround: {
+                    skin: {
+                        bg: "var(--bg-color)",
+                    },
                 },
             },
         },
