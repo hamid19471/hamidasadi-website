@@ -1,5 +1,3 @@
-/** @type {import('tailwindcss').Config} */
-
 const withMT = require("@material-tailwind/react/utils/withMT");
 
 module.exports = withMT({
@@ -10,44 +8,15 @@ module.exports = withMT({
         "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-        fontFamily: {
-            sans: ["Oswald", "sans-serif"],
+        colors: {
+            primary: "#47aaf2",
+            secondray: "#2b2c6c",
         },
-        extend: {
-            textColor: {
-                skin: {
-                    text: "var(--text-color)",
-                    primary: "var(--primary-color)",
-                    border: "var(--border-color)",
-                },
-            },
-            borderRadius: {
-                skin: {
-                    btn: "0.6rem",
-                    box: "0.6rem",
-                },
-            },
-            fontSize: {
-                skin: {
-                    btn: "0.9rem",
-                    small: "1.3rem",
-                    main: "2rem",
-                    paragraph: "1rem",
-                },
-            },
-            fontWeight: {
-                skin: {
-                    btnWeight: "600",
-                    smallWeight: "400",
-                    mainWeight: "800",
-                    paragraph: "400",
-                },
-                backGround: {
-                    skin: {
-                        bg: "var(--bg-color)",
-                    },
-                },
-            },
+        fontSize: {
+            menuItems: "0.75rem",
+            content: "1rem",
+            heading: "1.875rem",
+            subtitle: "0.938rem",
         },
     },
     plugins: [],
