@@ -7,7 +7,7 @@ import { PhoneIcon } from "@heroicons/react/24/solid";
 import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
-        <header>
+        <header className="z-10">
             <div className="hidden container h-[75px] md:flex items-center justify-between py-[10px]">
                 <ul className="flex items-center justify-between gap-2">
                     {menuItems.map((item) => (
@@ -29,7 +29,7 @@ const Header = () => {
                     <img src={logo} alt="hamid asadi" className="w-[188px]" />
                 </div>
             </div>
-            <div className="fixed w-[400px] p-5 -translate-x-1/2 mobileMenu bottom-4 left-1/2 md:hidden">
+            <div className="fixed w-[400px] py-3 px-6 -translate-x-1/2 mobileMenu bottom-4 left-1/2 md:hidden z-50">
                 <div className="relative flex items-center justify-between text-primary text-[12px]">
                     <div className="flex flex-col items-center justify-center">
                         <HomeIcon className="w-7 h-7" />
