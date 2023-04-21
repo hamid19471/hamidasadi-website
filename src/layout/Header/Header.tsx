@@ -4,7 +4,7 @@ import { HomeIcon } from "@heroicons/react/24/solid";
 import { UserIcon } from "@heroicons/react/24/solid";
 import { FolderIcon } from "@heroicons/react/24/solid";
 import { PhoneIcon } from "@heroicons/react/24/solid";
-
+import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <header>
@@ -12,12 +12,10 @@ const Header = () => {
                 <ul className="flex items-center justify-between gap-2">
                     {menuItems.map((item) => (
                         <>
-                            <li
-                                className="flex items-center justify-between font-normal uppercase md:text-[14px] lg:text-[12px] py-[13px] px-[20px] cursor-pointer hover:text-skin-primary hover:scale-125 transition duration-300"
-                                key={item.id}
-                            >
+                                <NavLink to={item.link} key={item.id} className={`flex items-center justify-between font-normal uppercase md:text-[14px] lg:text-[12px] py-[13px] px-[20px] cursor-pointer hover:text-primary hover:scale-125 transition duration-300`}>
+
                                 {item.name}
-                            </li>
+                                </NavLink>
                             <span
                                 key={item.name}
                                 className="items-center justify-center font-light last:hidden"
@@ -32,7 +30,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="fixed w-[400px] p-5 -translate-x-1/2 mobileMenu bottom-4 left-1/2 md:hidden">
-                <div className="relative flex items-center justify-between text-skin-primary text-[12px]">
+                <div className="relative flex items-center justify-between text-primary text-[12px]">
                     <div className="flex flex-col items-center justify-center">
                         <HomeIcon className="w-7 h-7" />
                         <p>Home</p>
