@@ -7,7 +7,7 @@ export const menuItems = [
     {
         id: 2,
         name: "About",
-        link: "/about",
+        link: "/about-me",
     },
     {
         id: 3,
@@ -17,6 +17,6 @@ export const menuItems = [
     {
         id: 4,
         name: "Contact",
-        link: "/contact",
+        link: "/contact-me",
     },
 ];
