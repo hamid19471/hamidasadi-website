@@ -2,7 +2,7 @@ import { menuItems } from "../../FakeAPI/MenuItem";
 import logo from "../../assets/logo-footer.png";
 const Footer = () => {
     return (
-        <footer className="w-full bg-[#47aaf2] py-16">
+        <footer className="w-full bg-primary py-16">
             <div className="container flex flex-col items-center justify-center">
                 <div>
                     <img src={logo} alt="" className="w-[220px]" />
