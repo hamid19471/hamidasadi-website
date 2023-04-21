@@ -1,15 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --bg-color: #2b2c6c;
-        --primary-color: #47aaf2;
-        --border-color: #47aaf2;
-        --text-color: #fff;
-    }
     body {
+        font-family: 'Oswald', Courier, monospace;
         background-color: #16182c;
         background-image: url("./assets/bg.webp");
         background-position: center;
@@ -26,5 +22,10 @@
         backdrop-filter: blur(14px);
         border-radius: 50px;
         border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .active{
+        @apply scale-125 text-primary font-normal
+    }
+    .active:hover{
     }
 }
