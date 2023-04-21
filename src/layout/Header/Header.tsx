@@ -12,10 +12,13 @@ const Header = () => {
                 <ul className="flex items-center justify-between gap-2">
                     {menuItems.map((item) => (
                         <>
-                                <NavLink to={item.link} key={item.id} className={`flex items-center justify-between font-normal uppercase md:text-[14px] lg:text-[12px] py-[13px] px-[20px] cursor-pointer hover:text-primary hover:scale-125 transition duration-300`}>
-
+                            <NavLink
+                                to={item.link}
+                                key={item.id}
+                                className={`flex items-center justify-between font-normal uppercase md:text-[14px] lg:text-[12px] py-[13px] px-[20px] cursor-pointer hover:text-primary hover:scale-125 transition duration-300`}
+                            >
                                 {item.name}
-                                </NavLink>
+                            </NavLink>
                             <span
                                 key={item.name}
                                 className="items-center justify-center font-light last:hidden"
@@ -29,7 +32,7 @@ const Header = () => {
                     <img src={logo} alt="hamid asadi" className="w-[188px]" />
                 </div>
             </div>
-            <div className="fixed w-[400px] py-3 px-6 -translate-x-1/2 mobileMenu bottom-4 left-1/2 md:hidden z-50">
+            <div className="fixed w-[400px] py-3  -translate-x-1/2 mobileMenu bottom-4 left-1/2 md:hidden z-50">
                 <div className="relative flex items-center justify-between text-primary text-[12px]">
                     <div className="flex flex-col items-center justify-center">
                         <HomeIcon className="w-7 h-7" />
