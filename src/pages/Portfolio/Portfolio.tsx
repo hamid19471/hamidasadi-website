@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "../../layout";
 
 const Portfolio = () => {
-    return <div>Portfolio</div>;
+    return <Layout>Portfolio</Layout>;
 };
 
 export default Portfolio;
