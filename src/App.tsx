@@ -8,10 +8,11 @@ function App() {
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="about-me" element={<About/>}/>
-                    <Route path="portfolio" element={<Portfolio/>}/>
-                    <Route path="contact-me" element={<Contact/>}/>
+                    <Route path="/" element={<Home />} />
+                    <Route path="about-me" element={<About />} />
+                    <Route path="portfolio" element={<Portfolio />} />
+                    <Route path="contact-me" element={<Contact />} />
+                    <Route path="*" element={<div>404 Error</div>} />
                 </Routes>
             </BrowserRouter>
         </div>
