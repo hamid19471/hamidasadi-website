@@ -1,17 +1,14 @@
 import aboutImage from "../../assets/About-Hamidasadi-section.webp";
 import { FaAward } from "react-icons/fa";
 import Button from "../Button/Button";
+import SectionHeading from "../SectionHeading/SectionHeading";
 const AboutMe = () => {
     return (
         <div className="container">
-            <div className="flex flex-col items-center justify-center uppercase my-[100px]">
-                <p className="text-contet font-extralight tracking-wide">
-                    GET TO KNOW
-                </p>
-                <h3 className="text-heading text-primary font-bold tracking-wider">
-                    About Me
-                </h3>
+            <div>
+                <SectionHeading title="About Me" subTitle="GET TO KNOW" />
             </div>
+
             <div className="flex flex-col xl:flex-row justify-between items-center gap-10 w-full">
                 <div>
                     <img

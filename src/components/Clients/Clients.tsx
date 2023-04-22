@@ -18,17 +18,16 @@ import salamatNews from "../../assets/clients/salamat-news.png";
 import shirazMall from "../../assets/clients/shiraz-mall.png";
 import worldFle from "../../assets/clients/world-fle.png";
 import Button from "../Button/Button";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
 const Clients = () => {
     return (
         <div className="container">
-            <div className="flex flex-col items-center justify-center uppercase my-[120px]">
-                <p className="text-contet font-extralight tracking-wide">
-                    CLIENTS AND COMPANIES
-                </p>
-                <h3 className="text-heading text-primary font-bold tracking-wider">
-                    BELIVE ME
-                </h3>
+            <div>
+                <SectionHeading
+                    title="BELIVE ME"
+                    subTitle="CLIENTS AND COMPANIES"
+                />
             </div>
 
             <div className="grid grid-cols-3 gap-5 md:grid-cols-6 items-center opacity-80">
