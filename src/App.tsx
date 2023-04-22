@@ -5,7 +5,7 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import Contact from "./pages/Contact/Contact";
 function App() {
     return (
-        <div>
+        <div className="h-screen">
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
