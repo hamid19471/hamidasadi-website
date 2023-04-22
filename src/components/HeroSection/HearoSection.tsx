@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 const HearoSection = () => {
     return (
         <div>
-            <div className="container flex flex-col items-center py-[30px] h-screen uppercase z-0">
+            <div className="container flex flex-col items-center py-[30px] uppercase z-0">
                 <div className="flex flex-col text-center gap-[9px]">
                     <p className="text-content font-extralight text-white/90">
                         i'm
@@ -30,7 +30,7 @@ const HearoSection = () => {
                         <FaTelegram className="hover:scale-125 cursor-pointer duration-300" />
                         <BsFacebook className="hover:scale-125 cursor-pointer duration-300" />
                     </div>
-                    <img src={heroImage} alt="" className="w-full md:w-auto" />
+                    <img src={heroImage} alt="" className="w-auto mx-auto" />
                     <p className="hidden md:flex text-primary text-[13px] font-extralight md:text-content rotate-90 mb-10 hover:-translate-y-5 duration-300 cursor-pointer">
                         Scroll Down
                     </p>
