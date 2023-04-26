@@ -15,9 +15,7 @@
         background-size: 50vw 100vh;
         color: #ffff;
     }
-    .container {
-        @apply w-full max-w-[1340px] mx-auto;
-    }
+
     .mobileMenu {
         background-color: rgba(0, 0, 0, 0.3);
         box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
@@ -25,9 +23,12 @@
         border-radius: 50px;
         border: 1px solid rgba(255, 255, 255, 0.18);
     }
-    .active{
-        @apply scale-125 text-primary font-normal
-    }
-    .active:hover{
-    }
+    
 }
+.active{
+    @apply scale-125 text-primary font-normal;
+}
+.container {
+    @apply w-full max-w-[1340px] mx-auto;
+}
+
