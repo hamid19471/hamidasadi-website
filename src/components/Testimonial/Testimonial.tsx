@@ -16,7 +16,6 @@ const estimonial = () => {
         autoplay: true,
         autoplaySpeed: 2000,
         pauseOnHover: true,
-        dots: true,
         responsive: [
             {
                 breakpoint: 1024,
