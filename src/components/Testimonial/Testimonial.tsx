@@ -1,6 +1,6 @@
 import TestimonialsCard from "../TestimonialsCard/TestimonialsCard";
 import Slider, { Settings } from "react-slick";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { testimonials } from "../../FakeAPI/Testimonials";
 import SectionHeading from "../SectionHeading/SectionHeading";
 
@@ -38,6 +38,7 @@ const estimonial = () => {
             <Slider {...setting}>
                 {testimonials.map((item, index) => (
                     <div
+                        key={item.id}
                         className={`${
                             index == active
                                 ? " duration-300 transition-all"
