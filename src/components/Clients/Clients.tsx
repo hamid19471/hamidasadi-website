@@ -53,14 +53,6 @@ const Clients = () => {
                 <img src={radman} alt="Internation Conferences corporation" />
                 <img src={salamatNews} alt="Online News website for health" />
             </div>
-            <div className="flex flex-col md:flex-row gap-7 items-center justify-center my-[80px]">
-                <Button
-                    name="contact me"
-                    path="/contact-me"
-                    primary="primary"
-                />
-                <Button name="Read More" path="/about-me" />
-            </div>
         </div>
     );
 };
