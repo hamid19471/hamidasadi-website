@@ -16,7 +16,7 @@ const TestimonialsCard = ({ image, name, title, comment }: Props) => {
             <h1 className="mt-[20px] font-light text-2xl tracking-wider my-[5px]">
                 {name}
             </h1>
-            <h2 className="font-extralight text-[14px] tracking-widest uppercase">
+            <h2 className="font-extralight text-[13px] tracking-widest uppercase">
                 {title}
             </h2>
             <p className="font-extralight tracking-wide leading-8 text-white/80 mt-[20px] text-center">
